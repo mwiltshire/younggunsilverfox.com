@@ -1,0 +1,18 @@
+---
+export interface Props {
+  size?: 'sm' | 'lg';
+  href: string;
+}
+
+const { href, size = 'sm' } = Astro.props;
+---
+
+<a
+  href={href}
+  target="_blank"
+  class={`inline-flex font-chicle text-text hover:scale-110 transition ${
+    size === 'sm' ? 'text-2xl' : 'text-4xl'
+  }`}
+>
+  <slot />
+</a>

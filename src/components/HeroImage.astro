@@ -1,0 +1,13 @@
+---
+// Types won't work unless it's imported directly from node_modules.
+import { Img } from "../../node_modules/astro-imagetools/components";
+---
+
+<Img
+  src="/public/ygsf.jpeg"
+  alt=""
+  layout="fill"
+  attributes={{ img: { class: "rounded-lg" } }}
+  objectPosition="75%"
+  placeholder="dominantColor"
+/>

@@ -1,0 +1,31 @@
+---
+import Footer from '../components/Footer.astro';
+import '@fontsource/chicle';
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-background p-2 md:p-3">
+    <main class="relative">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+<style is:global>
+  html {
+    font-family: Helvetica, Arial, system-ui, sans-serif;
+  }
+</style>

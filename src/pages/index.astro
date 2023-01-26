@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Logo from '../components/Logo.astro';
+import HeroImage from '../components/HeroImage.astro';
+import SongkickWidget from '../components/SongkickWidget.astro';
+import TourDatesHeading from '../components/TourDatesHeading.astro';
+import ExternalLinks from '../components/ExternalLinks.astro';
+---
+
+<Layout title="Young Gun Silver Fox">
+  <div class="h-[calc(100vh-10rem)] md:h-[calc(100vh-7rem)]">
+    <HeroImage />
+    <div class="absolute top-6 w-full flex justify-center md:justify-start">
+      <div class="h-[5rem] w-[5rem] md:h-[6rem] md:w-[6rem] text-background">
+        <Logo />
+      </div>
+    </div>
+  </div>
+  <ExternalLinks />
+  <div class="py-20 md:py-28 w-full max-w-4xl m-auto">
+    <TourDatesHeading>All Tour Dates</TourDatesHeading>
+    <SongkickWidget />
+  </div>
+</Layout>
