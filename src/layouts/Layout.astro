@@ -1,6 +1,13 @@
 ---
+import { renderImg } from '../../node_modules/astro-imagetools/api';
 import Footer from '../components/Footer.astro';
 import '../styles/font.css';
+
+const { link } = await renderImg({
+  src: '/public/ygsf.jpeg',
+  alt: 'Young Gun Silver Fox',
+  quality: 50
+});
 ---
 
 <!DOCTYPE html>
@@ -14,6 +21,7 @@ import '../styles/font.css';
       content="UK based British/American West Coast Yacht Rock duo"
     />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <Fragment set:html={link} />
     <link
       rel="preload"
       href="chicle-latin-400-normal.woff2"
@@ -34,10 +42,10 @@ import '../styles/font.css';
       <slot />
     </main>
     <Footer />
+    <style is:global>
+      html {
+        font-family: Helvetica, Arial, system-ui, sans-serif;
+      }
+    </style>
   </body>
 </html>
-<style is:global>
-  html {
-    font-family: Helvetica, Arial, system-ui, sans-serif;
-  }
-</style>
