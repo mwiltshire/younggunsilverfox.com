@@ -1,13 +1,16 @@
 ---
 // Types won't work unless it's imported directly from node_modules.
-import { Img } from "../../node_modules/astro-imagetools/components";
+import { Img } from '../../node_modules/astro-imagetools/components';
 ---
 
 <Img
   src="/public/ygsf.jpeg"
-  alt=""
+  alt="Young Gun Silver Fox"
   layout="fill"
-  attributes={{ img: { class: "rounded-lg" } }}
+  attributes={{ img: { class: 'rounded-lg' } }}
   objectPosition="75%"
   placeholder="dominantColor"
+  quality={50}
+  sizes="100vw"
+  loading="eager"
 />
