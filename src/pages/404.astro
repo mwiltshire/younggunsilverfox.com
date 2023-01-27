@@ -1,16 +1,18 @@
 ---
+import Section from '../components/Section.astro';
 import Layout from '../layouts/Layout.astro';
-import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Young Gun Silver Fox">
-  <div class="h-screen w-full max-w-md m-auto flex flex-col justify-center">
-    <h1 class="text-text font-chicle text-9xl">404</h1>
-    <p class="text-xl text-text">
-      Looks like this page doesn't exist. Try heading back to the <a
-        href="/"
-        class="underline font-bold underline-offset-2">home page</a
-      > instead.
-    </p>
-  </div>
+<Layout>
+  <Section id="404">
+    <div class="h-screen w-full max-w-md m-auto flex flex-col justify-center">
+      <h1 class="text-text font-chicle text-9xl">404</h1>
+      <p class="text-xl text-text">
+        Looks like this page doesn't exist. Try heading back to the <a
+          href="/"
+          class="underline font-bold underline-offset-2">home page</a
+        > instead.
+      </p>
+    </div>
+  </Section>
 </Layout>

@@ -7,17 +7,22 @@ import TourDatesHeading from '../components/TourDatesHeading.astro';
 import ExternalLinks from '../components/ExternalLinks.astro';
 import HeroWrapper from '../components/HeroWrapper.astro';
 import HeroLogo from '../components/HeroLogo.astro';
-import TourDatesSection from '../components/TourDatesSection.astro';
+import Section from '../components/Section.astro';
+import TourDatesWrapper from '../components/TourDatesWrapper.astro';
 ---
 
-<Layout title="Young Gun Silver Fox">
-  <HeroWrapper>
-    <HeroImage />
-    <HeroLogo />
-  </HeroWrapper>
-  <ExternalLinks />
-  <TourDatesSection>
-    <TourDatesHeading>All Tour Dates</TourDatesHeading>
-    <SongkickWidget />
-  </TourDatesSection>
+<Layout>
+  <Section id="home">
+    <HeroWrapper>
+      <HeroImage />
+      <HeroLogo />
+    </HeroWrapper>
+    <ExternalLinks />
+  </Section>
+  <Section id="tour-dates">
+    <TourDatesWrapper>
+      <TourDatesHeading>All Tour Dates</TourDatesHeading>
+      <SongkickWidget />
+    </TourDatesWrapper>
+  </Section>
 </Layout>
