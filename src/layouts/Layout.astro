@@ -37,6 +37,85 @@ const { link } = await renderImg({
       type="font/woff2"
       crossorigin="anonymous"
     />
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style is:global>
+      #mc_embed_signup {
+        clear: left;
+        font: inherit;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+      }
+    </style>
+    <script>
+      // @ts-expect-error
+      !(function (f, b, e, v, n, t, s) {
+        // @ts-expect-error
+        if (f.fbq) return;
+        // @ts-expect-error
+        n = f.fbq = function () {
+          // @ts-expect-error
+          n.callMethod
+            ? // @ts-expect-error
+              n.callMethod.apply(n, arguments)
+            : // @ts-expect-error
+              n.queue.push(arguments);
+        };
+        // @ts-expect-error
+        if (!f._fbq) f._fbq = n;
+        // @ts-expect-error
+        n.push = n;
+        // @ts-expect-error
+        n.loaded = !0;
+        // @ts-expect-error
+        n.version = '2.0';
+        // @ts-expect-error
+        n.queue = [];
+        // @ts-expect-error
+        t = b.createElement(e);
+        // @ts-expect-error
+        t.async = !0;
+        // @ts-expect-error
+        t.src = v;
+        // @ts-expect-error
+        s = b.getElementsByTagName(e)[0];
+        // @ts-expect-error
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
+      // @ts-expect-error
+      fbq('init', '974263869333378');
+      // @ts-expect-error
+      fbq('track', 'PageView');
+      // @ts-expect-error
+      fbq('init', '1819927092177976');
+      // @ts-expect-error
+      fbq('track', 'PageView');
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=1819927092177976&ev=PageView&noscript=1"
+      /></noscript
+    >
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=974263869333378&ev=PageView
+      &noscript=1"
+      />
+    </noscript>
   </head>
   <body class="bg-background p-2 md:p-3">
     <main class="relative">

@@ -3,13 +3,14 @@ import Layout from '../layouts/Layout.astro';
 import Logo from '../components/Logo.astro';
 import HeroImage from '../components/HeroImage.astro';
 import SongkickWidget from '../components/SongkickWidget.astro';
-import TourDatesHeading from '../components/TourDatesHeading.astro';
+import SectionHeading from '../components/SectionHeading.astro';
 import ExternalLinks from '../components/ExternalLinks.astro';
 import HeroWrapper from '../components/HeroWrapper.astro';
 import HeroLogo from '../components/HeroLogo.astro';
 import Section from '../components/Section.astro';
-import TourDatesWrapper from '../components/TourDatesWrapper.astro';
+import SectionWrapper from '../components/SectionWrapper.astro';
 import HeroHeading from '../components/HeroHeading.astro';
+import SignUp from '../components/SignUp.astro';
 ---
 
 <Layout>
@@ -22,9 +23,15 @@ import HeroHeading from '../components/HeroHeading.astro';
     <ExternalLinks />
   </Section>
   <Section id="tour-dates">
-    <TourDatesWrapper>
-      <TourDatesHeading>All Tour Dates</TourDatesHeading>
+    <SectionWrapper>
+      <SectionHeading>All Tour Dates</SectionHeading>
       <SongkickWidget />
-    </TourDatesWrapper>
+    </SectionWrapper>
+  </Section>
+  <Section id="signup">
+    <SectionWrapper>
+      <SectionHeading>Sign up</SectionHeading>
+      <SignUp />
+    </SectionWrapper>
   </Section>
 </Layout>
