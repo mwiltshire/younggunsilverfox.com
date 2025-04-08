@@ -42,6 +42,11 @@ const { link } = await renderImg({
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <style is:global>
       #mc_embed_signup {
         clear: left;
@@ -49,6 +54,30 @@ const { link } = await renderImg({
         width: 100%;
         max-width: 600px;
         margin: auto;
+      }
+
+      #mc_embed_signup p {
+        margin: 8px 0;
+      }
+
+      #mc-embedded-subscribe-form input[type='checkbox'] {
+        display: inline;
+        width: auto;
+        margin-right: 10px;
+      }
+
+      #mergeRow-gdpr {
+        margin-top: 20px;
+      }
+
+      #mergeRow-gdpr fieldset label {
+        font-weight: normal;
+      }
+
+      #mc-embedded-subscribe-form .mc_fieldset {
+        border: none;
+        min-height: 0px;
+        padding-bottom: 0px;
       }
     </style>
     <script>
