@@ -1,12 +1,19 @@
 ---
-import Logo from "../components/Logo.astro";
+import Logo from '../components/Logo.astro';
 ---
 
 <footer>
-  <div class="flex items-center justify-center h-32 md:h-48 text-text pt-6">
+  <div class="flex items-center justify-center h-32 md:h-48 text-text py-6">
     <Logo />
   </div>
-  <p class="font-chicle text-text text-center py-4">
-    © {new Date().getFullYear()}, Young Gun Silver Fox
-  </p>
+  <div>
+    <p class="font-chicle text-text text-center py-2">
+      Contact: <a href="mailto:carly@mg-management.co.uk" class="underline"
+        >carly@mg-management.co.uk</a
+      >
+    </p>
+    <p class="font-chicle text-text text-center py-2">
+      © {new Date().getFullYear()}, Young Gun Silver Fox
+    </p>
+  </div>
 </footer>
